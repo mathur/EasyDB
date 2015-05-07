@@ -36,8 +36,8 @@ CREATE TABLE `CS465` (
 -- ORDER BY:  `ID`
 
 INSERT INTO `CS465` VALUES (1,'Rohan','rmathur2');
-INSERT INTO `CS465` VALUES (1,'Austin','achung13');
-INSERT INTO `CS465` VALUES (1,'Aravind','sundrsn2');
+INSERT INTO `CS465` VALUES (2,'Austin','achung13');
+INSERT INTO `CS465` VALUES (3,'Aravind','sundrsn2');
 
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
