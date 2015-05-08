@@ -54,6 +54,22 @@ tbody tr:hover {
     background-color: rgba(129,208,177,.3);
 }
 
+.deleted {
+    background-color: rgba(255,0,0,.3) !important;
+}
+
+.deleted:hover {
+    background-color: rgba(255,0,0,.3) !important;
+}
+
+.added {
+    background-color: rgba(0,255,0,.3) !important;
+}
+
+.added:hover {
+    background-color: rgba(0,255,0,.3) !important;
+}
+
 /* For appearance */
 .sticky-wrap {
 	overflow-x: auto;
