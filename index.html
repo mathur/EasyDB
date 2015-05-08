@@ -16,6 +16,7 @@
 		<link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
 		<link rel="stylesheet" type="text/css" href="css/component1.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo1.css" />
+		<link rel="stylesheet" type="text/css" href="css/search.css" />
 		<link rel="stylesheet" type="text/css" href="styles.css" />
 		<script src="js/modernizr.custom.js"></script>
 	</head>
@@ -27,26 +28,23 @@
 			-->
 			<nav class="st-menu st-effect-5" id="menu-5">
 				<ul>
-					<li><a class="icon icon-data" href="#">Data Management</a></li>
-					<li><a class="icon icon-search" href="index.html">Query</a></li>
-					<li><a class="icon icon-pen" href="create.html">Create</a></li>
-					<li><a class="icon icon-tools" href="diff.html">Diff</a></li>
-					<li><a class="icon icon-display" href="visualize.html">Visualize</a></li>
+					<li><a class="icon icon-home" href="splash.html">EasyDB</a></li>
+					<li><a class="icon icon-tools" href="index.html">Tools</a></li>
+					<li><a class="icon icon-upload" href="import.html">Import</a></li>
 				</ul>
 			</nav>
 			<!-- content push wrapper -->
 			<div class="st-pusher">
 				<!--
 					example menus
-					these menus will be under the push wrapper
+					these menus will be under the push wrappers
 				-->
 				<div class="st-content"><!-- this is the wrapper for the content -->
 						<!-- Top Navigation -->
 						<div class="main clearfix">
-							<div id="st-trigger-effects" class="" style = "display: inline;">
-								<button data-effect="st-effect-5" class="icon icon-arrow-right" style = "margin: 10px;"></button>
-							</div>
-							<h1 style = "width: 100px; display: inline; padding: 10px;">Query</h1>
+							<div id="st-trigger-effects" style = "display: inline;">
+							<button data-effect="st-effect-5"><img src="easyDB.png" alt="EasyDB" style="width:150px;"></button>
+						</div>
 							<div class="container">
 								<!-- Top Navigation -->
 								<section>
@@ -54,70 +52,86 @@
 										<nav>
 											<ul>
 												<li><a href="#section-topline-1" class="icon icon-home"><span>Query</span></a></li>
-												<li><a href="#section-topline-2" class="icon icon-search"><span>Search</span></a></li>
-												<li><a href="#section-topline-3" class="icon icon-data"><span>Import File</span></a></li>
-												<li><a href="#section-topline-4" class="icon icon-upload"><span>Export File</span></a></li>
+												<li><a href="#section-topline-3" class="icon icon-pen"><span>Create</span></a></li>
+												<li><a href="#section-topline-4" class="icon icon-display"><span>Visualize</span></a></li>
+												<li><a href="#section-topline-5" class="icon icon-data"><span>Diff</span></a></li>
 											</ul>
 										</nav>
 										<div class="content-wrap" style = "background-color: white !important;">
 											<section id="section-topline-1">
-Enter a raw SQL query here:
-<textarea rows="4" cols="50">
-</textarea><br />
-<div id="submitbutton" style = "float: right; margin-right: 195px">
-	<button type="submit">Submit Query</button>
-</div>
-<br /><br /><br />
+												<div class="content">
+
+								                <form id="ui_element" class="sb_wrapper">
+								                    <p>
+														<input class="sb_input" type="text"/>
+														<input class="sb_search" type="submit" value=""/>
+													</p>
+													<ul class="sb_dropdown" style="display:none; z-index: auto !important;">
+														<li class="sb_filter">Filter your search</li>
+														<li><input type="checkbox"/><label for="Automotive">Name</label></li>
+														<li><input type="checkbox"/><label for="Baby">Email</label></li>
+														<li><input type="checkbox"/><label for="Beauty">Data 1</label></li>
+														<li><input type="checkbox"/><label for="Books">Data 2</label></li>
+													</ul>
+								                </form>
+
+								        </div>
 												<table>
 													<thead>
 														<tr>
 															<th>Name</th>
 															<th>Email</th>
-															<th>Phone</th>
-															<th>Mobile</th>
+															<th>Data 1</th>
+															<th>Data 2</th>
 														</tr>
 													</thead>
 													<tbody>
-														<tr><td class="user-name">gary coleman</td><td class="user-email">gary.coleman21@example.com</td><td class="user-phone">(398)-332-5385</td><td class="user-mobile">(888)-677-3719</td></tr>
-														<tr><td class="user-name">rose parker</td><td class="user-email">rose.parker16@example.com</td><td class="user-phone">(293)-873-2247</td><td class="user-mobile">(216)-889-4933</td></tr>
-														<tr><td class="user-name">chloe nelson</td><td class="user-email">chloe.nelson18@example.com</td><td class="user-phone">(957)-213-3499</td><td class="user-mobile">(207)-516-4474</td></tr>
-														<tr><td class="user-name">eric bell</td><td class="user-email">eric.bell16@example.com</td><td class="user-phone">(897)-762-9782</td><td class="user-mobile">(565)-627-3002</td></tr>
-														<tr><td class="user-name">douglas hayes</td><td class="user-email">douglas.hayes92@example.com</td><td class="user-phone">(231)-391-6269</td><td class="user-mobile">(790)-838-2130</td></tr>
-														<tr><td class="user-name">cameron brown</td><td class="user-email">cameron.brown32@example.com</td><td class="user-phone">(204)-488-5204</td><td class="user-mobile">(508)-463-6811</td></tr>
-														<tr><td class="user-name">nevaeh diaz</td><td class="user-email">nevaeh.diaz99@example.com</td><td class="user-phone">(436)-578-2946</td><td class="user-mobile">(906)-412-3302</td></tr>
-														<tr><td class="user-name">kathy miller</td><td class="user-email">kathy.miller62@example.com</td><td class="user-phone">(724)-705-3555</td><td class="user-mobile">(764)-841-2531</td></tr>
-														<tr><td class="user-name">susan king</td><td class="user-email">susan.king88@example.com</td><td class="user-phone">(774)-205-7754</td><td class="user-mobile">(639)-267-9728</td></tr>
-														<tr><td class="user-name">jeffery ramirez</td><td class="user-email">jeffery.ramirez83@example.com</td><td class="user-phone">(723)-243-7706</td><td class="user-mobile">(172)-597-3422</td></tr>
-														<tr><td class="user-name">gary coleman</td><td class="user-email">gary.coleman21@example.com</td><td class="user-phone">(398)-332-5385</td><td class="user-mobile">(888)-677-3719</td></tr>
-														<tr><td class="user-name">rose parker</td><td class="user-email">rose.parker16@example.com</td><td class="user-phone">(293)-873-2247</td><td class="user-mobile">(216)-889-4933</td></tr>
-														<tr><td class="user-name">chloe nelson</td><td class="user-email">chloe.nelson18@example.com</td><td class="user-phone">(957)-213-3499</td><td class="user-mobile">(207)-516-4474</td></tr>
-														<tr><td class="user-name">eric bell</td><td class="user-email">eric.bell16@example.com</td><td class="user-phone">(897)-762-9782</td><td class="user-mobile">(565)-627-3002</td></tr>
-														<tr><td class="user-name">douglas hayes</td><td class="user-email">douglas.hayes92@example.com</td><td class="user-phone">(231)-391-6269</td><td class="user-mobile">(790)-838-2130</td></tr>
-														<tr><td class="user-name">cameron brown</td><td class="user-email">cameron.brown32@example.com</td><td class="user-phone">(204)-488-5204</td><td class="user-mobile">(508)-463-6811</td></tr>
-														<tr><td class="user-name">nevaeh diaz</td><td class="user-email">nevaeh.diaz99@example.com</td><td class="user-phone">(436)-578-2946</td><td class="user-mobile">(906)-412-3302</td></tr>
-														<tr><td class="user-name">kathy miller</td><td class="user-email">kathy.miller62@example.com</td><td class="user-phone">(724)-705-3555</td><td class="user-mobile">(764)-841-2531</td></tr>
-														<tr><td class="user-name">susan king</td><td class="user-email">susan.king88@example.com</td><td class="user-phone">(774)-205-7754</td><td class="user-mobile">(639)-267-9728</td></tr>
-														<tr><td class="user-name">jeffery ramirez</td><td class="user-email">jeffery.ramirez83@example.com</td><td class="user-phone">(723)-243-7706</td><td class="user-mobile">(172)-597-3422</td></tr>
-														<tr><td class="user-name">gary coleman</td><td class="user-email">gary.coleman21@example.com</td><td class="user-phone">(398)-332-5385</td><td class="user-mobile">(888)-677-3719</td></tr>
-														<tr><td class="user-name">rose parker</td><td class="user-email">rose.parker16@example.com</td><td class="user-phone">(293)-873-2247</td><td class="user-mobile">(216)-889-4933</td></tr>
-														<tr><td class="user-name">chloe nelson</td><td class="user-email">chloe.nelson18@example.com</td><td class="user-phone">(957)-213-3499</td><td class="user-mobile">(207)-516-4474</td></tr>
-														<tr><td class="user-name">eric bell</td><td class="user-email">eric.bell16@example.com</td><td class="user-phone">(897)-762-9782</td><td class="user-mobile">(565)-627-3002</td></tr>
-														<tr><td class="user-name">douglas hayes</td><td class="user-email">douglas.hayes92@example.com</td><td class="user-phone">(231)-391-6269</td><td class="user-mobile">(790)-838-2130</td></tr>
-														<tr><td class="user-name">cameron brown</td><td class="user-email">cameron.brown32@example.com</td><td class="user-phone">(204)-488-5204</td><td class="user-mobile">(508)-463-6811</td></tr>
-														<tr><td class="user-name">nevaeh diaz</td><td class="user-email">nevaeh.diaz99@example.com</td><td class="user-phone">(436)-578-2946</td><td class="user-mobile">(906)-412-3302</td></tr>
-														<tr><td class="user-name">kathy miller</td><td class="user-email">kathy.miller62@example.com</td><td class="user-phone">(724)-705-3555</td><td class="user-mobile">(764)-841-2531</td></tr>
-														<tr><td class="user-name">susan king</td><td class="user-email">susan.king88@example.com</td><td class="user-phone">(774)-205-7754</td><td class="user-mobile">(639)-267-9728</td></tr>
-														<tr><td class="user-name">jeffery ramirez</td><td class="user-email">jeffery.ramirez83@example.com</td><td class="user-phone">(723)-243-7706</td><td class="user-mobile">(172)-597-3422</td></tr>
+														<tr><td class="user-name">gary coleman</td><td class="user-email">gary.coleman21@example.com</td><td class="user-phone">1</td><td class="user-mobile">10</td></tr>
+														<tr><td class="user-name">rose parker</td><td class="user-email">rose.parker16@example.com</td><td class="user-phone">1</td><td class="user-mobile">11</td></tr>
+														<tr><td class="user-name">chloe nelson</td><td class="user-email">chloe.nelson18@example.com</td><td class="user-phone">1</td><td class="user-mobile">11</td></tr>
+														<tr><td class="user-name">eric bell</td><td class="user-email">eric.bell16@example.com</td><td class="user-phone">2</td><td class="user-mobile">14</td></tr>
+														<tr><td class="user-name">douglas hayes</td><td class="user-email">douglas.hayes92@example.com</td><td class="user-phone">2</td><td class="user-mobile">14</td></tr>
+														<tr><td class="user-name">cameron brown</td><td class="user-email">cameron.brown32@example.com</td><td class="user-phone">3</td><td class="user-mobile">21</td></tr>
+														<tr><td class="user-name">nevaeh diaz</td><td class="user-email">nevaeh.diaz99@example.com</td><td class="user-phone">4</td><td class="user-mobile">16</td></tr>
+														<tr><td class="user-name">kathy miller</td><td class="user-email">kathy.miller62@example.com</td><td class="user-phone">4</td><td class="user-mobile">13</td></tr>
+
 													</tbody>
 												</table>
 											</section>
 											<section id="section-topline-2">
-Enter search term here:
-<input type="text"><br />
-<div id="submitbutton" style = "float: right;">
-	<button type="submit">Search</button>
-</div>
-</section>
+												<div id="table" class="table-editable">
+													<table class="table">
+														<tr>
+															<th>Name</th>
+															<th>Value</th>
+															<th></th>
+															<th><span class="table-add" style = "cursor: pointer;">Add Column</span></th>
+														</tr>
+														<!-- This is our clonable table line -->
+														<tr class="hide">
+															<td contenteditable="true">Untitled</td>
+															<td contenteditable="true">undefined</td>
+															<td>
+																<span class="table-remove " style = "cursor: pointer;"> Remove </span>
+															</td>
+															<td>
+																<div style = "word-spacing: 20px;">
+																<span class="table-up " style = "cursor: pointer;"> Up</span>
+																<span class="table-down" style = "cursor: pointer;"> Down </span>
+															</div>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</section>
+
+											<section id="section-topline-5" style = "padding: 0px !important;">
+												<div id = "chart_div"></div>
+												<div id = "chart_div0"></div>
+												<div id = "chart_div1"></div>
+
+											</section>
+
 											<section id="section-topline-3"><form id="upload" action="index.html" method="POST" enctype="multipart/form-data">
 
 <fieldset>
@@ -139,15 +153,14 @@ Enter search term here:
 
 </form></section>
 											<section id="section-topline-4">
+												<div id="submitbutton">
+													<button type="submit">Export Data</button>
+												</div>
+											</section>
 
-<div id="submitbutton">
-	<button type="submit">Export Data</button>
-</div>
-</section>
 										</div><!-- /content -->
 									</div><!-- /tabs -->
 								</section>
-
 							</div><!-- /container -->
 						</div><!-- /main -->
 				</div><!-- /st-content -->
@@ -155,6 +168,7 @@ Enter search term here:
 		</div><!-- /st-container -->
 	</div> <!-- bind -->
 		<script src="js/cbpFWTabs.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script>
 			(function() {
 
@@ -164,8 +178,160 @@ Enter search term here:
 
 			})();
 		</script>
+
+		<script>
+		$(function() {
+/**
+* the element
+*/
+var $ui 		= $('#ui_element');
+
+/**
+* on focus and on click display the dropdown,
+* and change the arrow image
+*/
+$ui.find('.sb_input').bind('focus click',function(){
+	$ui.find('.sb_down')
+		.addClass('sb_up')
+		.removeClass('sb_down')
+		.andSelf()
+		.find('.sb_dropdown')
+		.show();
+});
+
+/**
+* on mouse leave hide the dropdown,
+* and change the arrow image
+*/
+$ui.bind('mouseleave',function(){
+	$ui.find('.sb_up')
+		.addClass('sb_down')
+		.removeClass('sb_up')
+		.andSelf()
+		.find('.sb_dropdown')
+		.hide();
+});
+
+/**
+* selecting all checkboxes
+*/
+$ui.find('.sb_dropdown').find('label[for="all"]').prev().bind('click',function(){
+	$(this).parent().siblings().find(':checkbox').attr('checked',this.checked).attr('disabled',this.checked);
+});
+		});
+</script>
+<script>
+	(function() {
+
+		[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+			new CBPFWTabs( el );
+		});
+
+	})();
+</script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+
+	// Load the Visualization API and the piechart package.
+	google.load('visualization', '1.0', {'packages':['corechart']});
+
+	// Set a callback to run when the Google Visualization API is loaded.
+	google.setOnLoadCallback(drawChart);
+
+	// Callback that creates and populates a data table,
+	// instantiates the pie chart, passes in the data and
+	// draws it.
+	function drawChart() {
+
+		// Create the data table.
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', 'Topping');
+		data.addColumn('number', 'Slices');
+		data.addRows([
+			['Mushrooms', 3],
+			['Onions', 1],
+			['Olives', 1],
+			['Zucchini', 1],
+			['Pepperoni', 2]
+		]);
+
+		// Set chart options
+		var options = {'title':'How Much Pizza I Ate Last Night',
+									'width':400,
+									'height':300};
+
+		// Instantiate and draw our chart, passing in some options.
+		var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+		chart.draw(data, options);
+	}
+</script>
+
+<script type="text/javascript">
+
+	// Load the Visualization API and the piechart package.
+	google.load('visualization', '1.0', {'packages':['corechart']});
+
+	// Set a callback to run when the Google Visualization API is loaded.
+	google.setOnLoadCallback(drawChart);
+
+	// Callback that creates and populates a data table,
+	// instantiates the pie chart, passes in the data and
+	// draws it.
+	function drawChart() {
+
+		// Create the data table.
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', 'Topping');
+		data.addColumn('number', 'Slices');
+		data.addRows([
+			['Mushrooms', 3],
+			['Onions', 1],
+			['Olives', 1],
+			['Zucchini', 1],
+			['Pepperoni', 2]
+		]);
+
+		// Set chart options
+		var options = {'title':'How Much Pizza I Ate Last Night',
+									'width':400,
+									'height':300};
+
+		// Instantiate and draw our chart, passing in some options.
+		var chart = new google.visualization.BarChart(document.getElementById('chart_div0'));
+		chart.draw(data, options);
+	}
+</script>
+<script type="text/javascript">
+	google.load("visualization", "1", {packages:["corechart"]});
+	google.setOnLoadCallback(drawChart);
+	function drawChart() {
+		var data = google.visualization.arrayToDataTable([
+			['Age', 'Weight'],
+			[ 8,      12],
+			[ 4,      5.5],
+			[ 11,     14],
+			[ 4,      5],
+			[ 3,      3.5],
+			[ 6.5,    7]
+		]);
+
+		var options = {
+			title: 'Age vs. Weight comparison',
+			hAxis: {title: 'Age', minValue: 0, maxValue: 15},
+			vAxis: {title: 'Weight', minValue: 0, maxValue: 15},
+			legend: 'none'
+		};
+
+		var chart = new google.visualization.ScatterChart(document.getElementById('chart_div1'));
+
+		chart.draw(data, options);
+	}
+</script>
+</script>
+
 		<script src="js/classie.js"></script>
 		<script src="js/sidebarEffects.js"></script>
 		<script src="js/jquery.stickyheader.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
 	</body>
 </html>

@@ -318,6 +318,8 @@
 /* Content */
 .content-wrap {
 	position: relative;
+	overflow-y: scroll;
+	min-height: 100%;
 }
 
 .content-wrap section {
@@ -325,7 +327,6 @@
 	margin: 0 auto;
 	padding: 1em;
 	max-width: 1200px;
-	height: 100%;
 	text-align: center;
 }
 
