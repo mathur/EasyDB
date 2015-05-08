@@ -8,3 +8,23 @@
   width: 100px;
   background-color: gray;
 }
+
+.graphInfo{
+  display: inline-block;
+  position: relative;
+  height: 275px;
+  width: 600px;
+  float: left;
+
+
+}
+
+
+.graphs{
+  display: inline-block;
+  position: relative;
+  height: 275px;
+  width: 400px;
+  float: left;
+
+}
