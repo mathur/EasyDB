@@ -143,8 +143,9 @@ a:hover, a:focus {
 
 button {
 	border: none;
-	padding: 10px 5px 10px 15px;
+	padding: 10px 10px 10px 10px;
 	color: #fff;
+	background: #2c5376;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	font-size: 1em;
 	letter-spacing: 1px;
@@ -156,7 +157,7 @@ button {
 }
 
 button:hover {
-	background: #2c5376;
+	background: #132e44;
 }
 
 .info {
